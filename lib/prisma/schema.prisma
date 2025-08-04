@@ -1,0 +1,175 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("NEON_DATABASE_URL")
+}
+
+enum ArtistStatus {
+  draft
+  pending
+  published
+  rejected
+}
+
+model Artist {
+  id            BigInt    @id @default(autoincrement())
+  name          String
+  nameSlug      String    @unique
+  image         String?
+  website       String?
+  youtube       String?
+  youtubeMusic  String?
+  spotify       String?
+  appleMusic    String?
+  status        ArtistStatus @default(pending)
+  createdAt     DateTime?
+  updatedAt     DateTime?
+  songs         Song[]
+}
+
+model Assignment {
+  id    BigInt @id @default(autoincrement())
+  title String @db.VarChar(255)
+}
+
+model ChurchEvent {
+  id            BigInt       @id @default(autoincrement())
+  name          String       @db.VarChar(255)
+  teamId        BigInt
+  startDate    DateTime     @db.Timestamp(0)
+  endDate      DateTime     @db.Timestamp(0)
+  venue         String?      @db.VarChar(255)
+  isHomeEvent   Boolean      @default(true)
+  coverPhoto    String?      @db.VarChar(255)
+  creatorId     BigInt
+  status        String       @default("draft") @db.VarChar(255)
+  createdAt     DateTime?    @db.Timestamp(0)
+  updatedAt     DateTime?    @db.Timestamp(0)
+  users         User         @relation(fields: [creatorId], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "churchEventsCreatorIDForeign")
+  churchTeams   ChurchTeam   @relation(fields: [teamId], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "churchEventsTeamIDForeign")
+}
+
+model ChurchTeamMember {
+  id                                          BigInt    @id @default(autoincrement())
+  teamId                                     BigInt
+  memberId                                   BigInt
+  adminRole                                  String?   @db.VarChar(255)
+  status                                      String    @default("active") @db.VarChar(255)
+  assignmentId                               Int
+  creatorId                                  BigInt
+  createdAt                                  DateTime? @db.Timestamp(0)
+  updatedAt                                  DateTime? @db.Timestamp(0)
+  usersChurchTeamMembersCreatorIdToUsers     User     @relation("churchTeamMembersCreatorIDToUsers", fields: [creatorId], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "churchTeamMembersCreatorIDForeign")
+  usersChurchTeamMembersMemberIdToUsers       User     @relation("churchTeamMembersMemberIDToUsers", fields: [memberId], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "churchTeamMembersMemberIDForeign")
+}
+
+model ChurchTeam {
+  id            BigInt          @id @default(autoincrement())
+  name          String          @db.VarChar(255)
+  uuid          String          @unique(map: "church_teams_uuid_unique") @db.VarChar(255)
+  churchId      BigInt
+  coverPhoto    String?         @db.VarChar(255)
+  createdAt     DateTime?       @db.Timestamp(0)
+  updatedAt     DateTime?       @db.Timestamp(0)
+  churchEvents  ChurchEvent[]
+  churches      Church         @relation(fields: [churchId], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "churchTeamsChurchIDForeign")
+}
+
+model Church {
+  id              BigInt         @id @default(autoincrement())
+  name            String         @db.VarChar(255)
+  location        String         @db.VarChar(255)
+  profilePicture  String?        @db.VarChar(255)
+  uuid            String         @unique(map: "churchesUuidUnique") @db.VarChar(255)
+  bio             String?        @db.VarChar(255)
+  coverPhoto      String?        @db.VarChar(255)
+  facebook        String?        @db.VarChar(255)
+  youtube         String?        @db.VarChar(255)
+  instagram       String?        @db.VarChar(255)
+  website         String?        @db.VarChar(255)
+  email           String?        @db.VarChar(255)
+  phone           String?        @db.VarChar(255)
+  status          String         @default("active") @db.VarChar(255)
+  createdAt      DateTime?      @db.Timestamp(0)
+  updatedAt      DateTime?      @db.Timestamp(0)
+  churchTeams    ChurchTeam[]
+}
+
+model EventFile {
+  id         BigInt    @id @default(autoincrement())
+  createdAt DateTime? @db.Timestamp(0)
+  updatedAt DateTime? @db.Timestamp(0)
+}
+
+model File {
+  id             BigInt    @id @default(autoincrement())
+  filableId      Int
+  filableType    String    @db.VarChar(255)
+  name           String    @db.VarChar(255)
+  assetableId    Int
+  assetableType  String    @db.VarChar(255)
+  createdAt      DateTime? @db.Timestamp(0)
+  updatedAt      DateTime? @db.Timestamp(0)
+}
+
+model SavedSong {
+  id             BigInt    @id @default(autoincrement())
+  songId        Int
+  savableId     Int
+  savableType   String    @db.VarChar(255)
+  transposedInt Int?
+  speed          Int?
+  createdAt     DateTime? @db.Timestamp(0)
+  updatedAt     DateTime? @db.Timestamp(0)
+}
+
+model Song {
+  id         BigInt    @id @default(autoincrement())
+  title      String    @db.VarChar(255)
+  titleSlug  String    @db.VarChar(255)
+  uuid       String    @unique(map: "songsUuidUnique") @db.VarChar(255)
+  artistId   BigInt
+  album      String?   @db.VarChar(255)
+  year       String?   @db.VarChar(255)
+  lwcIntro   String?
+  lwc        String
+  status     String    @default("draft") @db.VarChar(255)
+  creatorId  BigInt
+  youtube    String?   @db.VarChar(255)
+  isPublic   Boolean   @default(true)
+  views      Int       @default(0)
+  speed      Int?
+  createdAt  DateTime? @db.Timestamp(0)
+  updatedAt  DateTime? @db.Timestamp(0)
+  artists    Artist   @relation(fields: [artistId], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "songsArtistIDForeign")
+  users      User     @relation(fields: [creatorId], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "songsCreatorIDForeign")
+}
+
+model User {
+  id          BigInt   @id @default(autoincrement())
+  email       String   @unique(map: "usersEmailUnique") @db.VarChar(255)
+  password    String   @db.VarChar(255)
+  firstName   String   @db.VarChar(255)
+  lastName    String   @db.VarChar(255)
+  username    String   @unique(map: "usersUsernameUnique") @db.VarChar(255)
+  emailVerifiedAt   DateTime? @db.Timestamp(0)
+  isActivated       Boolean   @default(true)
+  userType    String   @db.VarChar(50)
+  avatar      String?   @db.VarChar(255)
+  provider    String?   @db.VarChar(255)
+  providerId  String?   @unique(map: "usersProviderIdUnique") @db.VarChar(255)
+  rememberToken String? @db.VarChar(100)
+  createdAt   DateTime? @db.Timestamp(0)
+  updatedAt   DateTime? @db.Timestamp(0)
+  emailVerificationToken String? @db.VarChar(255)
+  verificationTokenExpiry DateTime? @db.Timestamp(0)
+  bio         String?   @db.VarChar(255)
+  latestKey   String?   @db.VarChar(255)
+  churchEvents ChurchEvent[]
+  churchTeamMembersChurchTeamMembersCreatorIdToUsers ChurchTeamMember[] @relation("churchTeamMembersCreatorIDToUsers")
+  churchTeamMembersChurchTeamMembersMemberIdToUsers  ChurchTeamMember[] @relation("churchTeamMembersMemberIDToUsers")
+  songs       Song[]
+}

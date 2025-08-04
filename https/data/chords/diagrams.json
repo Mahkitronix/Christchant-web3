@@ -1,0 +1,604 @@
+{
+  "A": {
+    "d1": {
+      "dead": "X o 2 2 2 o",
+      "screen": "1",
+      "dots": [
+        { "dot": 3, "fret": 2 },
+        { "dot": 4, "fret": 2 },
+        { "dot": 5, "fret": 2 }
+      ]
+    },
+    "d2": {
+      "dead": "5 7 7 6 5 5",
+      "screen": "5",
+      "dots": [
+        { "dot": 1, "fret": 1 },
+        { "dot": 4, "fret": 2 },
+        { "dot": 2, "fret": 3 },
+        { "dot": 3, "fret": 3 },
+        { "dot": 6, "fret": 1 }
+      ]
+    }
+  },
+  "A#": {
+    "d1": {
+      "dead": "X 1 3 3 3 1",
+      "screen": "1",
+      "dots": [
+        { "dot": 2, "fret": 1 },
+        { "dot": 5, "fret": 3 },
+        { "dot": 4, "fret": 3 },
+        { "dot": 5, "fret": 3 },
+        { "dot": 6, "fret": 1 },
+        { "dot": 3, "fret": 3 }
+      ]
+    },
+    "d2": {
+      "dead": "6 8 8 7 o o",
+      "screen": "6",
+      "dots": [
+        { "dot": 1, "fret": 1 },
+        { "dot": 4, "fret": 2 },
+        { "dot": 2, "fret": 3 },
+        { "dot": 3, "fret": 3 },
+        { "dot": 6, "fret": 1 }
+      ]
+    },
+    "d3": {
+      "dead": "X 8 8 7 6 X",
+      "screen": "6",
+      "dots": [
+        { "dot": 5, "fret": 1 },
+        { "dot": 4, "fret": 2 },
+        { "dot": 2, "fret": 3 },
+        { "dot": 3, "fret": 3 }
+      ]
+    },
+    "d4": {
+      "dead": "X X 8 7 6 6",
+      "screen": "6",
+      "dots": [
+        { "dot": 6, "fret": 1 },
+        { "dot": 4, "fret": 2 },
+        { "dot": 3, "fret": 3 },
+        { "dot": 5, "fret": 1 },
+        { "dot": 5, "fret": 1 }
+      ]
+    },
+    "d5": {
+      "dead": "6 7 8 8 X X",
+      "screen": "1",
+      "dots": [
+        { "dot": 1, "fret": 1 },
+        { "dot": 4, "fret": 2 },
+        { "dot": 2, "fret": 3 },
+        { "dot": 3, "fret": 3 }
+      ]
+    },
+    "d6": {
+      "dead": "X X 8 10 11 10",
+      "screen": "3",
+      "dots": [
+        { "dot": 3, "fret": 1 },
+        { "dot": 4, "fret": 3 },
+        { "dot": 6, "fret": 3 },
+        { "dot": 5, "fret": 4 }
+      ]
+    },
+    "d7": {
+      "dead": "X 13 12 10 11 10",
+      "screen": "10",
+      "dots": [
+        { "dot": 4, "fret": 1 },
+        { "dot": 5, "fret": 2 },
+        { "dot": 3, "fret": 3 },
+        { "dot": 2, "fret": 4 },
+        { "dot": 6, "fret": 1 }
+      ]
+    }
+  },
+
+  "Am": {
+    "d1": {
+      "dead": "X o 2 2 2 o",
+      "screen": "1",
+      "dots": [
+        { "dot": 5, "fret": 1 },
+        { "dot": 3, "fret": 2 },
+        { "dot": 4, "fret": 2 }
+      ]
+    },
+    "d2": {
+      "dead": "5 7 7 6 5 5",
+      "screen": "5",
+      "dots": [
+        { "dot": 1, "fret": 1 },
+        { "dot": 6, "fret": 1 },
+        { "dot": 2, "fret": 3 },
+        { "dot": 3, "fret": 3 },
+        { "dot": 6, "fret": 1 }
+      ]
+    }
+  },
+  "B": {
+    "d1": {
+      "dead": "X 2 4 4 4 2",
+      "screen": "2",
+      "dots": [
+        { "dot": 2, "fret": 1 },
+        { "dot": 5, "fret": 3 },
+        { "dot": 4, "fret": 3 },
+        { "dot": 5, "fret": 3 },
+        { "dot": 6, "fret": 1 },
+        { "dot": 3, "fret": 3 }
+      ]
+    },
+    "d2": {
+      "dead": "7 9 9 8 7 7",
+      "screen": "7",
+      "dots": [
+        { "dot": 1, "fret": 1 },
+        { "dot": 4, "fret": 2 },
+        { "dot": 2, "fret": 3 },
+        { "dot": 3, "fret": 3 },
+        { "dot": 6, "fret": 1 }
+      ]
+    }
+  },
+  "Bm": {
+    "d1": {
+      "dead": "X 2 4 4 4 2",
+      "screen": "1",
+      "dots": [
+        { "dot": 2, "fret": 2 },
+        { "dot": 5, "fret": 3 },
+        { "dot": 3, "fret": 4 },
+        { "dot": 4, "fret": 4 },
+        { "dot": 6, "fret": 2 }
+      ]
+    },
+    "d2": {
+      "dead": "7 9 9 8 7 7",
+      "screen": "7",
+      "dots": [
+        { "dot": 1, "fret": 1 },
+        { "dot": 2, "fret": 3 },
+        { "dot": 3, "fret": 3 },
+        { "dot": 6, "fret": 1 },
+        { "dot": 6, "fret": 1 }
+      ]
+    }
+  },
+  "C": {
+    "d1": {
+      "dead": "X 3 2 o 1 o",
+      "screen": "1",
+      "dots": [
+        { "dot": 5, "fret": 1 },
+        { "dot": 3, "fret": 2 },
+        { "dot": 2, "fret": 3 }
+      ]
+    },
+    "d2": {
+      "dead": "X 3 5 5 5 3",
+      "screen": "3",
+      "dots": [
+        { "dot": 2, "fret": 1 },
+        { "dot": 5, "fret": 3 },
+        { "dot": 4, "fret": 3 },
+        { "dot": 5, "fret": 3 },
+        { "dot": 6, "fret": 1 },
+        { "dot": 3, "fret": 3 }
+      ]
+    },
+    "d3": {
+      "dead": "8 10 10 9 8 8",
+      "screen": "8",
+      "dots": [
+        { "dot": 1, "fret": 1 },
+        { "dot": 4, "fret": 2 },
+        { "dot": 2, "fret": 3 },
+        { "dot": 3, "fret": 3 },
+        { "dot": 6, "fret": 1 }
+      ]
+    }
+  },
+  "D": {
+    "d1": {
+      "dead": "X X o 2 3 2",
+      "screen": "1",
+      "dots": [
+        { "dot": 4, "fret": 2 },
+        { "dot": 6, "fret": 2 },
+        { "dot": 5, "fret": 3 }
+      ]
+    },
+    "d2": {
+      "dead": "X 5 7 7 7 5",
+      "screen": "5",
+      "dots": [
+        { "dot": 2, "fret": 1 },
+        { "dot": 5, "fret": 3 },
+        { "dot": 4, "fret": 3 },
+        { "dot": 5, "fret": 3 },
+        { "dot": 6, "fret": 1 },
+        { "dot": 3, "fret": 3 }
+      ]
+    },
+    "d3": {
+      "dead": "10 12 12 11 10 10",
+      "screen": "10",
+      "dots": [
+        { "dot": 1, "fret": 1 },
+        { "dot": 4, "fret": 2 },
+        { "dot": 2, "fret": 3 },
+        { "dot": 3, "fret": 3 },
+        { "dot": 6, "fret": 1 }
+      ]
+    }
+  },
+  "Dm": {
+    "d1": {
+      "dead": "X X o 2 3 2",
+      "screen": "1",
+      "dots": [
+        { "dot": 6, "fret": 1 },
+        { "dot": 4, "fret": 2 },
+        { "dot": 5, "fret": 3 }
+      ]
+    },
+    "d2": {
+      "dead": "X 5 7 7 7 5",
+      "screen": "5",
+      "dots": [
+        { "dot": 2, "fret": 1 },
+        { "dot": 4, "fret": 3 },
+        { "dot": 3, "fret": 3 },
+        { "dot": 4, "fret": 3 },
+        { "dot": 6, "fret": 1 },
+        { "dot": 5, "fret": 2 }
+      ]
+    },
+    "d3": {
+      "dead": "10 12 12 11 10 10",
+      "screen": "10",
+      "dots": [
+        { "dot": 1, "fret": 1 },
+        { "dot": 4, "fret": 2 },
+        { "dot": 2, "fret": 3 },
+        { "dot": 3, "fret": 3 },
+        { "dot": 6, "fret": 1 }
+      ]
+    }
+  },
+  "E": {
+    "d1": {
+      "dead": "o 2 2 1 o o",
+      "screen": "1",
+      "dots": [
+        { "dot": 4, "fret": 1 },
+        { "dot": 2, "fret": 2 },
+        { "dot": 3, "fret": 2 }
+      ]
+    },
+    "d2": {
+      "dead": "X 2 2 1 o X",
+      "screen": "1",
+      "dots": [
+        { "dot": 4, "fret": 1 },
+        { "dot": 2, "fret": 2 },
+        { "dot": 3, "fret": 2 }
+      ]
+    },
+    "d3": {
+      "dead": "X X 2 1 o o",
+      "screen": "1",
+      "dots": [
+        { "dot": 4, "fret": 1 },
+        { "dot": 3, "fret": 2 }
+      ]
+    },
+    "d4": {
+      "dead": "o 2 2 1 X X",
+      "screen": "1",
+      "dots": [
+        { "dot": 4, "fret": 1 },
+        { "dot": 2, "fret": 2 },
+        { "dot": 3, "fret": 2 }
+      ]
+    },
+    "d5": {
+      "dead": "X X 2 4 5 4",
+      "screen": "2",
+      "dots": [
+        { "dot": 3, "fret": 1 },
+        { "dot": 4, "fret": 3 },
+        { "dot": 6, "fret": 3 },
+        { "dot": 5, "fret": 4 }
+      ]
+    },
+    "d6": {
+      "dead": "X 7 6 4 5 4",
+      "screen": "4",
+      "dots": [
+        { "dot": 4, "fret": 1 },
+        { "dot": 5, "fret": 2 },
+        { "dot": 3, "fret": 3 },
+        { "dot": 2, "fret": 4 },
+        { "dot": 6, "fret": 1 }
+      ]
+    },
+    "d7": {
+      "dead": "X 7 9 9 9 7",
+      "screen": "7",
+      "dots": [
+        { "dot": 2, "fret": 1 },
+        { "dot": 3, "fret": 3 },
+        { "dot": 4, "fret": 3 },
+        { "dot": 5, "fret": 3 },
+        { "dot": 6, "fret": 1 }
+      ]
+    }
+  },
+  "Em": {
+    "d1": {
+      "dead": "X o 2 2 2 o",
+      "screen": "1",
+      "dots": [
+        { "dot": 2, "fret": 2 },
+        { "dot": 3, "fret": 2 }
+      ]
+    },
+    "d2": {
+      "dead": "X X 2 4 5 3",
+      "screen": "2",
+      "dots": [
+        { "dot": 3, "fret": 1 },
+        { "dot": 6, "fret": 2 },
+        { "dot": 4, "fret": 3 },
+        { "dot": 5, "fret": 4 }
+      ]
+    },
+    "d3": {
+      "dead": "X 7 9 9 8 7",
+      "screen": "7",
+      "dots": [
+        { "dot": 3, "fret": 1 },
+        { "dot": 5, "fret": 2 },
+        { "dot": 3, "fret": 3 },
+        { "dot": 4, "fret": 3 },
+        { "dot": 6, "fret": 1 }
+      ]
+    }
+  },
+  "F": {
+    "d1": {
+      "dead": "1 3 3 2 1 1",
+      "screen": "1",
+      "dots": [
+        { "dot": 1, "fret": 1 },
+        { "dot": 4, "fret": 2 },
+        { "dot": 2, "fret": 3 },
+        { "dot": 3, "fret": 3 },
+        { "dot": 6, "fret": 1 }
+      ]
+    },
+    "d2": {
+      "dead": "X 4 3 2 1 o",
+      "screen": "1",
+      "dots": [
+        { "dot": 5, "fret": 1 },
+        { "dot": 4, "fret": 2 },
+        { "dot": 2, "fret": 3 },
+        { "dot": 3, "fret": 3 }
+      ]
+    },
+    "d3": {
+      "dead": "X X 3 2 1 1",
+      "screen": "1",
+      "dots": [
+        { "dot": 6, "fret": 1 },
+        { "dot": 4, "fret": 2 },
+        { "dot": 3, "fret": 3 },
+        { "dot": 5, "fret": 1 },
+        { "dot": 5, "fret": 1 }
+      ]
+    },
+    "d4": {
+      "dead": "1 3 3 2 X X",
+      "screen": "1",
+      "dots": [
+        { "dot": 1, "fret": 1 },
+        { "dot": 4, "fret": 2 },
+        { "dot": 2, "fret": 3 },
+        { "dot": 3, "fret": 3 }
+      ]
+    },
+    "d5": {
+      "dead": "X X 3 5 6 5",
+      "screen": "3",
+      "dots": [
+        { "dot": 3, "fret": 1 },
+        { "dot": 4, "fret": 3 },
+        { "dot": 6, "fret": 3 },
+        { "dot": 5, "fret": 4 }
+      ]
+    },
+    "d6": {
+      "dead": "X 8 7 5 6 5",
+      "screen": "5",
+      "dots": [
+        { "dot": 4, "fret": 1 },
+        { "dot": 5, "fret": 2 },
+        { "dot": 3, "fret": 3 },
+        { "dot": 2, "fret": 4 },
+        { "dot": 6, "fret": 1 }
+      ]
+    },
+    "d7": {
+      "dead": "X 8 10 10 10 8",
+      "screen": "7",
+      "dots": [
+        { "dot": 2, "fret": 1 },
+        { "dot": 3, "fret": 3 },
+        { "dot": 4, "fret": 3 },
+        { "dot": 5, "fret": 3 },
+        { "dot": 6, "fret": 1 }
+      ]
+    }
+  },
+  "Fm": {
+    "d1": {
+      "dead": "1 3 3 2 1 1",
+      "screen": "1",
+      "dots": [
+        { "dot": 1, "fret": 1 },
+        { "dot": 6, "fret": 1 },
+        { "dot": 2, "fret": 3 },
+        { "dot": 3, "fret": 3 },
+        { "dot": 6, "fret": 1 }
+      ]
+    },
+    "d2": {
+      "dead": "X X 3 5 6 4",
+      "screen": "3",
+      "dots": [
+        { "dot": 3, "fret": 1 },
+        { "dot": 6, "fret": 2 },
+        { "dot": 4, "fret": 3 },
+        { "dot": 5, "fret": 4 }
+      ]
+    },
+    "d3": {
+      "dead": "X 8 10 10 10 8",
+      "screen": "8",
+      "dots": [
+        { "dot": 2, "fret": 1 },
+        { "dot": 3, "fret": 3 },
+        { "dot": 4, "fret": 3 },
+        { "dot": 5, "fret": 2 },
+        { "dot": 6, "fret": 1 }
+      ]
+    }
+  },
+  "G": {
+    "d1": {
+      "dead": "3 2 o o o 3",
+      "screen": "1",
+      "dots": [
+        { "dot": 2, "fret": 2 },
+        { "dot": 1, "fret": 3 },
+        { "dot": 6, "fret": 3 }
+      ]
+    },
+    "d2": {
+      "dead": "3 5 5 4 3 3",
+      "screen": "3",
+      "dots": [
+        { "dot": 1, "fret": 1 },
+        { "dot": 4, "fret": 2 },
+        { "dot": 2, "fret": 3 },
+        { "dot": 3, "fret": 3 },
+        { "dot": 6, "fret": 1 }
+      ]
+    },
+    "d3": {
+      "dead": "X 5 5 4 3 X",
+      "screen": "3",
+      "dots": [
+        { "dot": 5, "fret": 1 },
+        { "dot": 4, "fret": 2 },
+        { "dot": 2, "fret": 3 },
+        { "dot": 3, "fret": 3 }
+      ]
+    },
+    "d4": {
+      "dead": "X X 5 4 3 3",
+      "screen": "1",
+      "dots": [
+        { "dot": 6, "fret": 1 },
+        { "dot": 4, "fret": 2 },
+        { "dot": 3, "fret": 3 },
+        { "dot": 5, "fret": 1 },
+        { "dot": 5, "fret": 1 }
+      ]
+    },
+    "d5": {
+      "dead": "3 5 5 4 X X",
+      "screen": "3",
+      "dots": [
+        { "dot": 1, "fret": 1 },
+        { "dot": 4, "fret": 2 },
+        { "dot": 2, "fret": 4 },
+        { "dot": 3, "fret": 4 }
+      ]
+    },
+    "d6": {
+      "dead": "X X 5 7 8 7",
+      "screen": "5",
+      "dots": [
+        { "dot": 3, "fret": 1 },
+        { "dot": 4, "fret": 3 },
+        { "dot": 6, "fret": 3 },
+        { "dot": 5, "fret": 4 }
+      ]
+    },
+    "d7": {
+      "dead": "X 10 9 7 8 7",
+      "screen": "7",
+      "dots": [
+        { "dot": 4, "fret": 1 },
+        { "dot": 5, "fret": 2 },
+        { "dot": 3, "fret": 3 },
+        { "dot": 2, "fret": 4 },
+        { "dot": 6, "fret": 1 }
+      ]
+    },
+    "d8": {
+      "dead": "X 10 12 12 12 10",
+      "screen": "10",
+      "dots": [
+        { "dot": 2, "fret": 1 },
+        { "dot": 3, "fret": 3 },
+        { "dot": 4, "fret": 3 },
+        { "dot": 5, "fret": 3 },
+        { "dot": 6, "fret": 1 }
+      ]
+    }
+  },
+  "Gm": {
+    "d1": {
+      "dead": "3 5 5 3 3 3",
+      "screen": "3",
+      "dots": [
+        { "dot": 1, "fret": 1 },
+        { "dot": 6, "fret": 1 },
+        { "dot": 2, "fret": 3 },
+        { "dot": 3, "fret": 3 },
+        { "dot": 6, "fret": 1 }
+      ]
+    },
+    "d2": {
+      "dead": "X X 5 7 8 6",
+      "screen": "5",
+      "dots": [
+        { "dot": 3, "fret": 1 },
+        { "dot": 6, "fret": 2 },
+        { "dot": 4, "fret": 3 },
+        { "dot": 5, "fret": 4 }
+      ]
+    },
+    "d3": {
+      "dead": "X 10 12 12 11 10",
+      "screen": "10",
+      "dots": [
+        { "dot": 2, "fret": 1 },
+        { "dot": 3, "fret": 3 },
+        { "dot": 4, "fret": 3 },
+        { "dot": 5, "fret": 3 },
+        { "dot": 6, "fret": 1 }
+      ]
+    }
+  }
+}

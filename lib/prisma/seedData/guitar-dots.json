@@ -1,0 +1,308 @@
+{
+  "A": {
+    "basic": [
+      { "string": 3, "fret": 2 },
+      { "string": 4, "fret": 2 },
+      { "string": 5, "fret": 2 }
+    ],
+    "second": [
+      { "string": 1, "fret": 2 },
+      { "string": 4, "fret": 3 },
+      { "string": 2, "fret": 4 },
+      { "string": 3, "fret": 4 },
+      { "string": 6, "fret": 2 }
+    ],
+    "third": [
+      { "string": 2, "fret": 1 },
+      { "string": 3, "fret": 3 },
+      { "string": 4, "fret": 3 },
+      { "string": 5, "fret": 3 },
+      { "string": 6, "fret": 1 }
+    ]
+  },
+  "Am": {
+    "basic": [
+      { "string": 5, "fret": 1 },
+      { "string": 3, "fret": 2 },
+      { "string": 4, "fret": 2 }
+    ],
+    "second": [
+      { "string": 1, "fret": 2 },
+      { "string": 4, "fret": 3 },
+      { "string": 2, "fret": 4 },
+      { "string": 3, "fret": 4 },
+      { "string": 6, "fret": 2 }
+    ],
+    "third": [
+      { "string": 2, "fret": 1 },
+      { "string": 3, "fret": 3 },
+      { "string": 4, "fret": 3 },
+      { "string": 5, "fret": 3 },
+      { "string": 6, "fret": 1 }
+    ]
+  },
+  "B": {
+    "basic": [
+      { "string": 2, "fret": 2 },
+      { "string": 3, "fret": 4 },
+      { "string": 4, "fret": 4 },
+      { "string": 5, "fret": 4 },
+      { "string": 6, "fret": 2 }
+    ],
+    "second": [
+      { "string": 2, "fret": 3 },
+      { "string": 3, "fret": 5 },
+      { "string": 4, "fret": 5 },
+      { "string": 5, "fret": 4 },
+      { "string": 6, "fret": 3 }
+    ],
+    "third": [
+      { "string": 2, "fret": 1 },
+      { "string": 3, "fret": 3 },
+      { "string": 4, "fret": 3 },
+      { "string": 5, "fret": 2 },
+      { "string": 6, "fret": 1 }
+    ]
+  },
+  "Bm": {
+    "basic": [
+      { "string": 2, "fret": 2 },
+      { "string": 5, "fret": 3 },
+      { "string": 3, "fret": 4 },
+      { "string": 4, "fret": 4 },
+      { "string": 6, "fret": 2 }
+    ],
+    "second": [
+      { "string": 2, "fret": 3 },
+      { "string": 3, "fret": 5 },
+      { "string": 4, "fret": 5 },
+      { "string": 5, "fret": 4 },
+      { "string": 6, "fret": 3 }
+    ],
+    "third": [
+      { "string": 2, "fret": 1 },
+      { "string": 3, "fret": 3 },
+      { "string": 4, "fret": 3 },
+      { "string": 5, "fret": 2 },
+      { "string": 6, "fret": 1 }
+    ]
+  },
+
+  "C": {
+    "basic": [
+      { "string": 5, "fret": 1 },
+      { "string": 3, "fret": 2 },
+      { "string": 2, "fret": 3 }
+    ],
+    "second": [
+      { "string": 1, "fret": 2 },
+      { "string": 3, "fret": 4 },
+      { "string": 4, "fret": 4 },
+      { "string": 5, "fret": 4 },
+      { "string": 6, "fret": 2 }
+    ],
+    "third": [
+      { "string": 2, "fret": 1 },
+      { "string": 3, "fret": 3 },
+      { "string": 4, "fret": 3 },
+      { "string": 5, "fret": 2 },
+      { "string": 6, "fret": 1 }
+    ]
+  },
+  "Cm": {
+    "basic": [
+      { "string": 2, "fret": 2 },
+      { "string": 5, "fret": 3 },
+      { "string": 3, "fret": 4 },
+      { "string": 4, "fret": 4 },
+      { "string": 6, "fret": 2 }
+    ],
+    "second": [
+      { "string": 2, "fret": 3 },
+      { "string": 3, "fret": 5 },
+      { "string": 4, "fret": 5 },
+      { "string": 5, "fret": 4 },
+      { "string": 6, "fret": 3 }
+    ],
+    "third": [
+      { "string": 2, "fret": 1 },
+      { "string": 3, "fret": 3 },
+      { "string": 4, "fret": 3 },
+      { "string": 5, "fret": 2 },
+      { "string": 6, "fret": 1 }
+    ]
+  },
+
+  "D": {
+    "basic": [
+      { "string": 4, "fret": 2 },
+      { "string": 6, "fret": 2 },
+      { "string": 5, "fret": 3 }
+    ],
+    "second": [
+      { "string": 1, "fret": 2 },
+      { "string": 3, "fret": 4 },
+      { "string": 4, "fret": 4 },
+      { "string": 5, "fret": 4 },
+      { "string": 6, "fret": 2 }
+    ],
+    "third": [
+      { "string": 2, "fret": 1 },
+      { "string": 3, "fret": 3 },
+      { "string": 4, "fret": 3 },
+      { "string": 5, "fret": 2 },
+      { "string": 6, "fret": 1 }
+    ]
+  },
+  "Dm": {
+    "basic": [
+      { "string": 6, "fret": 1 },
+      { "string": 4, "fret": 2 },
+      { "string": 5, "fret": 3 }
+    ],
+    "second": [
+      { "string": 1, "fret": 2 },
+      { "string": 4, "fret": 3 },
+      { "string": 2, "fret": 4 },
+      { "string": 3, "fret": 4 },
+      { "string": 6, "fret": 2 }
+    ],
+    "third": [
+      { "string": 2, "fret": 1 },
+      { "string": 3, "fret": 3 },
+      { "string": 4, "fret": 3 },
+      { "string": 5, "fret": 3 },
+      { "string": 6, "fret": 1 }
+    ]
+  },
+  "E": {
+    "basic": [
+      { "string": 4, "fret": 1 },
+      { "string": 2, "fret": 2 },
+      { "string": 3, "fret": 2 }
+    ],
+    "second": [
+      { "string": 1, "fret": 2 },
+      { "string": 3, "fret": 4 },
+      { "string": 4, "fret": 4 },
+      { "string": 5, "fret": 4 },
+      { "string": 6, "fret": 2 }
+    ],
+    "third": [
+      { "string": 2, "fret": 1 },
+      { "string": 3, "fret": 3 },
+      { "string": 4, "fret": 3 },
+      { "string": 5, "fret": 2 },
+      { "string": 6, "fret": 1 }
+    ]
+  },
+  "Em": {
+    "basic": [
+      { "string": 1, "fret": 10 },
+      { "string": 2, "fret": 2 },
+      { "string": 3, "fret": 2 }
+    ],
+    "second": [
+      { "string": 1, "fret": 2 },
+      { "string": 3, "fret": 4 },
+      { "string": 4, "fret": 4 },
+      { "string": 5, "fret": 4 },
+      { "string": 6, "fret": 2 }
+    ],
+    "third": [
+      { "string": 2, "fret": 1 },
+      { "string": 3, "fret": 3 },
+      { "string": 4, "fret": 3 },
+      { "string": 5, "fret": 2 },
+      { "string": 6, "fret": 1 }
+    ]
+  },
+  "F": {
+    "basic": [
+      { "string": 1, "fret": 1 },
+      { "string": 4, "fret": 2 },
+      { "string": 2, "fret": 3 },
+      { "string": 3, "fret": 3 },
+      { "string": 6, "fret": 1 }
+    ],
+    "second": [
+      { "string": 1, "fret": 2 },
+      { "string": 3, "fret": 4 },
+      { "string": 4, "fret": 4 },
+      { "string": 5, "fret": 4 },
+      { "string": 6, "fret": 2 }
+    ],
+    "third": [
+      { "string": 2, "fret": 1 },
+      { "string": 3, "fret": 3 },
+      { "string": 4, "fret": 3 },
+      { "string": 5, "fret": 2 },
+      { "string": 6, "fret": 1 }
+    ]
+  },
+  "Fm": {
+    "basic": [
+      { "string": 1, "fret": 1 },
+      { "string": 0, "fret": 10 },
+      { "string": 2, "fret": 3 },
+      { "string": 3, "fret": 3 },
+      { "string": 6, "fret": 1 }
+    ],
+    "second": [
+      { "string": 1, "fret": 2 },
+      { "string": 3, "fret": 4 },
+      { "string": 4, "fret": 4 },
+      { "string": 5, "fret": 4 },
+      { "string": 6, "fret": 2 }
+    ],
+    "third": [
+      { "string": 2, "fret": 1 },
+      { "string": 3, "fret": 3 },
+      { "string": 4, "fret": 3 },
+      { "string": 5, "fret": 2 },
+      { "string": 6, "fret": 1 }
+    ]
+  },
+  "G": {
+    "basic": [
+      { "string": 2, "fret": 2 },
+      { "string": 1, "fret": 3 },
+      { "string": 6, "fret": 3 }
+    ],
+    "second": [
+      { "string": 1, "fret": 2 },
+      { "string": 3, "fret": 4 },
+      { "string": 4, "fret": 4 },
+      { "string": 5, "fret": 4 },
+      { "string": 6, "fret": 2 }
+    ],
+    "third": [
+      { "string": 2, "fret": 1 },
+      { "string": 3, "fret": 3 },
+      { "string": 4, "fret": 3 },
+      { "string": 5, "fret": 2 },
+      { "string": 6, "fret": 1 }
+    ]
+  },
+  "Gm": {
+    "basic": [
+      { "string": 2, "fret": 2 },
+      { "string": 1, "fret": 3 },
+      { "string": 6, "fret": 3 }
+    ],
+    "second": [
+      { "string": 1, "fret": 2 },
+      { "string": 3, "fret": 4 },
+      { "string": 4, "fret": 4 },
+      { "string": 5, "fret": 4 },
+      { "string": 6, "fret": 2 }
+    ],
+    "third": [
+      { "string": 2, "fret": 1 },
+      { "string": 3, "fret": 3 },
+      { "string": 4, "fret": 3 },
+      { "string": 5, "fret": 2 },
+      { "string": 6, "fret": 1 }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "1": ["I", "II", "III", "IV", "V"],
+  "2": ["II", "III", "IV", "V", "VI"],
+  "3": ["III", "IV", "V", "VI", "VII"],
+  "4": ["IV", "V", "VI", "VII", "VIII"],
+  "5": ["V", "VI", "VII", "VIII", "IX"],
+  "6": ["VI", "VII", "VIII", "IX", "X"],
+  "7": ["VII", "VIII", "IX", "X", "XI"],
+  "8": ["VIII", "IX", "X", "XI", "XII"]
+}

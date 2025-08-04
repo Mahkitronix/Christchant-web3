@@ -1,0 +1,220 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff; /* Light mode background */
+  --foreground: #212121; /* Default text color */
+  /* Colors */
+  --color-primary: #ef8f29; /* Accent color */
+  --color-secondary: #212121; /* Dark Background */
+  --color-tertiary: #b3b3b3; /* Light Gray */
+  --color-quaternary: #3a3a3a; /* Softer dark */
+  --color-quinary: #519eda; /* White for text */
+  --color-senary: #ffffff; /* White for text */
+  --color-septenary: #1db954; /* Spotify Green */
+  --color-octonary: #f97316; /* Accent Color */
+  --color-primary-dark: #1db954;
+  --color-primary-light: #1db954;
+  --color-text: #1d1d1d; /* Dark text */
+  --color-text-light: #e0e0e0; /* Light text */
+  --color-background: #f9f9f9; /* Light mode background */
+  --color-background-dark: #212121; /* Softer dark mode main background */
+  --color-sidebar: #2a2a2a; /* Sidebar color */
+  --color-border: #e0e0e0; /* Light border color */
+  --color-border-dark: #555; /* Softer dark border color */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #212121; /* Softer dark mode main background */
+    --foreground: #e0e0e0; /* Dark mode foreground */
+    --color-primary: #ef8f29; /* Dark mode primary color */
+    --color-secondary: #191414; /* Dark mode secondary color */
+    --color-tertiary: #b3b3b3; /* Dark mode light gray */
+    --color-quaternary: #444; /* Dark mode slightly lighter dark */
+    --color-quinary: #519eda; /* Dark mode white for text */
+    --color-senary: #ffffff; /* Dark mode white for text */
+    --color-septenary: #1db954; /* Dark mode Spotify Green */
+    --color-octonary: #f97316; /* Dark mode accent color */
+    --color-text: #e0e0e0; /* Dark mode light text */
+    --color-text-light: #b3b3b3; /* Dark mode light gray text */
+    --color-background: #212121; /* Dark mode main background */
+    --color-background-light: #2a2a2a; /* Dark mode sidebar background */
+    --color-background-lighter: #555; /* Dark mode lighter background */
+    --color-background-dark: #0a0a0a; /* Dark mode darker background */
+    --color-sidebar: #2a2a2a; /* Dark mode sidebar color */
+    --color-border: #555; /* Dark mode border color */
+  }
+}
+
+/* Add your existing animations and other styles below */
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-1%);
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.2s ease forwards;
+}
+
+.animate-slide-out {
+  animation: slide-out 0.6s ease forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s forwards;
+}
+
+.border-primary {
+  border-color: var(--color-primary);
+}
+/* Hide scrollbar by default */
+.scrollbar {
+  overflow: hidden; /* Hide the scrollbar initially */
+}
+
+/* Always show scrollbar */
+.scrollbar {
+  overflow-y: auto; /* Always show vertical scrollbar */
+}
+
+/* For WebKit browsers */
+.scrollbar::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the scrollbar track */
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #afafaf; /* Color of the scrollbar thumb */
+  opacity: 1; /* Always visible */
+  transition: opacity 0.5s ease; /* Transition for opacity */
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #8d8d8d; /* Color of the thumb on hover */
+}
+
+@media (prefers-color-scheme: dark) {
+  .scrollbar::-webkit-scrollbar-track {
+    background: #aaa; /* Dark background of the scrollbar track */
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #888888; /* Lighter color of the scrollbar thumb */
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #aaaaaa;
+  }
+}
+
+/* For Firefox */
+.scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #b3b3b3 #f1f1f1;
+}
+
+.triangle-up {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 15px solid #ffffff;
+}
+.transition-transform {
+  transition: transform 0.3s ease-in-out;
+}
+
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee {
+  display: inline-block;
+  animation: marquee 60s linear infinite;
+  /* Ensure this matches your duration */
+}
+
+.slider-wrapper {
+  overflow: hidden;
+  /* Hide overflow to create a clean scrolling effect */
+  width: 100%;
+  /* Ensure it takes up full width */
+}
+
+.marquee {
+  display: flex;
+  animation: marquee 60s linear infinite;
+  /* Adjust duration as needed */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+    /* Move left by half the width of the duplicated content */
+  }
+}
+
+.child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child-image {
+  max-width: 100%;
+  /* Ensure images are responsive */
+  /* Maintain aspect ratio */
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .scrollbar {
+    scrollbar-color: none var(--color-background-lighter);
+  }
+}

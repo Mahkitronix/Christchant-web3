@@ -1,0 +1,59 @@
+{
+  "G": {
+    "basic": "guitar-chords-sound/G-chord.m4a",
+    "alternative": "guitar-chords-sound/G-chord.m4a"
+  },
+  "C": {
+    "basic": "guitar-chords-sound/C-chord.m4a",
+    "alternative": "guitar-chords-sound/C-chord.m4a"
+  },
+  "D": {
+    "basic": "guitar-chords-sound/D-chord.m4a",
+    "alternative": "guitar-chords-sound/D-chord.m4a"
+  },
+  "E": {
+    "basic": "guitar-chords-sound/E-chord.m4a",
+    "alternative": "guitar-chords-sound/E-chord.m4a"
+  },
+  "F": {
+    "basic": "guitar-chords-sound/F-chord.m4a",
+    "alternative": "guitar-chords-sound/F-chord.m4a"
+  },
+
+  "A": {
+    "basic": "guitar-chords-sound/A-chord.m4a",
+    "alternative": "guitar-chords-sound/A-chord.m4a"
+  },
+  "B": {
+    "basic": "guitar-chords-sound/B-chord.m4a",
+    "alternative": "guitar-chords-sound/B-chord.m4a"
+  },
+  "C#": {
+    "basic": "guitar-chords-sound/C-sharp-chord.m4a",
+    "alternative": "guitar-chords-sound/C-sharp-chord.m4a"
+  },
+  "D#": {
+    "basic": "guitar-chords-sound/D-sharp-chord.m4a",
+    "alternative": "guitar-chords-sound/D-sharp-chord.m4a"
+  },
+  "E#": {
+    "basic": "guitar-chords-sound/E-sharp-chord.m4a",
+    "alternative": "guitar-chords-sound/E-sharp-chord.m4a"
+  },
+  "F#": {
+    "basic": "guitar-chords-sound/F-sharp-chord.m4a",
+    "alternative": "guitar-chords-sound/F-sharp-chord.m4a"
+  },
+  "G#": {
+    "basic": "guitar-chords-sound/G-sharp-chord.m4a",
+    "alternative": "guitar-chords-sound/G-sharp-chord.m4a"
+  },
+  "A#": {
+    "basic": "guitar-chords-sound/A-sharp-chord.m4a",
+    "alternative": "guitar-chords-sound/A-sharp-chord.m4a"
+  },
+  "B#": {
+    "basic": "guitar-chords-sound/B-sharp-chord.m4a",
+    "alternative": "guitar-chords-sound/B-sharp-chord.m4a"
+  }
+}
