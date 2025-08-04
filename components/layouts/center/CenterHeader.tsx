@@ -14,7 +14,7 @@ import {
 import { useEffect } from 'react'
 
 export default function CenterHeader() {
-  const { user, logout } = useUserAuth({
+  const { logout } = useUserAuth({
     redirectTo: '/center/login',
   })
 
@@ -114,7 +114,7 @@ export default function CenterHeader() {
             <DropdownTrigger>
               <button className="flex items-center gap-2 rounded-xl p-1 transition duration-200 ease-in-out hover:bg-gray-200">
                 <Avatar
-                  name={user?.firstName || 'S'}
+                  name="S"
                   size="sm"
                   className="transition-transform"
                 />

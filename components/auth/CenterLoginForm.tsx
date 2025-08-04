@@ -23,14 +23,13 @@ export default function CenterLoginForm({ redirect }: LoginFormProps) {
 
   const { login } = useUserAuth({
     redirectTo: redirect || '/center/dashboard',
-    userType: ['superAdmin'],
     requireVerified: true,
     requireActive: true,
   })
 
   async function onSubmit(values: LoginFormData) {
     try {
-      await login({ ...values, userType: 'superAdmin' })
+      await login({ ...values })
     } catch (res: any) {
       const errors = res?.errors || []
       errors.forEach(

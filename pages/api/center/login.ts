@@ -3,7 +3,7 @@ import withCors from '@middleware/server/withCors'
 import { validateRequest } from '@/utils/api/validation'
 import { apiLoginSchema } from '@/utils/validations/zod/auth.schema'
 import ServiceRepo from '@/https/repository/Service'
-import { generateToken } from '@/utils/auth'
+// import { generateToken } from '@/utils/auth'
 
 async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method !== 'POST') {
@@ -76,7 +76,7 @@ async function handler(req: NextApiRequest, res: NextApiResponse) {
           isVerified: user.isVerified,
           userType: user.userType,
         },
-        token: generateToken(user),
+        token: 'token',
       },
       success: true,
       message: 'Login successful',

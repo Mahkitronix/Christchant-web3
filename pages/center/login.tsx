@@ -9,7 +9,6 @@ const AdminLoginPage: React.FC = () => {
   const { redirect } = router.query as { redirect?: string }
   useUserAuth({
     redirectTo: '/center/dashboard',
-    userType: ['superAdmin'],
     requireVerified: true,
     requireActive: true,
   })
